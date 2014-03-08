@@ -1,0 +1,72 @@
+#ajax-contact-form textarea, #ajax-contact-form2 textarea  { height: 150px !important;}
+#ajax-contact-form input, #ajax-contact-form  textarea, #ajax-contact-form2 input, #ajax-contact-form2 textarea {
+  background: #F6F6F6;
+  color: #555 !important;
+  border: 1px solid black;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-box-border-radius: none;
+  -moz-box-border-radius: none;
+  border-radius: none;
+  margin-bottom: 15px;
+  padding: 8px 10px 8px;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+::-webkit-input-placeholder { font-family: 'Cousine', sans-serif; color: #71767d !important; opacity: 1.0; }
+:-moz-placeholder { font-family: 'Cousine', sans-serif; color: #71767F !important; opacity: 1.0; }
+::-moz-placeholder { font-family: 'Cousine', sans-serif;  color: #71767d !important; opacity: 1.0; }
+:-ms-input-placeholder { font-family: 'Cousine', sans-serif; color: #71767d !important; opacity: 1.0; }
+focus::-webkit-input-placeholder{font-family: 'Cousine', sans-serif; color: transparent; opacity: 1.0;}
+
+#ajax-contact-form input:focus, #ajax-contact-form  textarea:focus,
+#ajax-contact-form2 input:focus, #ajax-contact-form2  textarea:focus { background: #fff; color: #333; }
+
+#ajax-contact-form input.btn{
+  padding: 15px 25px;
+  border: 3px double #222;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: 'Montserrat';
+  font-size: 12px;
+  text-align: center;
+  display: inline-block;
+  overflow: hidden;color: #222;
+  border-radius: 0px;
+  margin-bottom: 15px;letter-spacing: 2px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#ajax-contact-form input.btn:hover {
+
+  background-color: #222;
+  cursor: pointer;
+  font-family: 'Montserrat';
+  color: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.notification_error {
+  color: #fff;
+  background-color: #333;
+  height: auto;
+    margin: 0 0 9px 0;
+    padding: 10px;
+    text-align: left;
+}
+.notification_ok {
+    color: #fff;
+  background-color: #333;
+  font-weight: 400;
+    height: auto;
+    margin: 0 0 9px 0;
+    padding: 10px;
+    text-align: center;
+  font-size: 13px;
+  text-transform: uppercase;
+}

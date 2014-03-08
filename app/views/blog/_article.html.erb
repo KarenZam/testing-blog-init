@@ -1,0 +1,32 @@
+<div class="col-lg-10 col-lg-offset-1 pad30">
+  <div class="col-sm-12 col-lg-12 fadein">
+    <div class="row">
+      <img src="img/blog/blog<%= article.id %>.jpg" alt="">
+      <div class="col-sm-2 col-lg-2 pad10">
+        <div class="row fadeInDown">
+          <h4><%= article.created_at.strftime("%b %Y") %></h4>
+          <div class="date"></div>
+          <h2 class="date-bottom ">
+            <i class="typcn typcn-messages"></i>
+            <a href="#"><%= article.created_at.strftime("%-d") %></a>
+          </h2>
+        </div>
+      </div>
+      <div class="col-sm-10 col-lg-10 pad10">
+        <div class="row fadeInDown">
+          <div class="post-title"><%= link_to article.title, blog_article_url(article.slug) %></div>
+          <ul class="post-meta">
+            <li>Posted by <a href="#"><%= article.user.username %></a></li>
+            <li>in <a href="#">web</a>, <a href="#">graphics</a></li>
+            <li>tags <a href="#">prints</a>, <a href="#">design</a></li>
+          </ul>
+          <div class="blog-body-markdown">
+            <%= m(article.body) %>
+          </div>
+          <h6 class="fadeInDown"><%= link_to "READ MORE", blog_article_url(article.slug) %>&rarr;</h6>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

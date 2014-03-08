@@ -1,0 +1,14 @@
+<a class="pull-left" href="#"><img src="img/blog/avatar2.jpg" alt="" class="pad10"/></a>
+<div class="media-body">
+  <p class="media-heading">
+    <a href="#"><%= comment.user.username %></a>
+    <%= comment.created_at.strftime("%-d %b %Y").upcase %>
+    <a href="#"><i class="typcn typcn-arrow-forward-outline reply"></i></a>
+  </p>
+  <div class="comment-body-markdown">
+    <%= m(comment.body) %>
+  </div>
+  <% comment.replies.each do |reply| %>
+    <%= render partial: 'comment', locals: { comment: reply } %>
+  <% end %>
+</div>

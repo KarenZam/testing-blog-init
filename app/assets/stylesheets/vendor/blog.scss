@@ -1,0 +1,56 @@
+.date { border: 3px solid #222; width: 50px; margin: -10px 0 10px; }
+.date-bottom { margin: 0px 0px; }
+.post-title { color: #222; margin: 12px 0 20px; text-transform: uppercase; font-weight: 700; font-size: 40px !important; line-height: 40px !important;}
+.post-title a { color: #222;   }
+.post-title a:hover { color: #444; font-size: 40px !important; }
+
+.post-meta  { margin: -5px 0 20px !important; }
+.post-meta li {  font-size: 12px; text-transform: uppercase !important; display: inline; margin: 0px 5px 0px -5px;}
+.post-meta a:hover { color: #747474; }
+
+#blog_carousel .carousel-control.right { right: 0px !important; left: auto; top: 45%; background-image: none !important; filter: none !important; }
+#blog_carousel .carousel-control.left { left: 0px !important; right: auto; top: 45%; background-image: none !important; filter: none; }
+#blog_carousel a.carousel-control.right, #blog_carousel a.carousel-control.left { color: #fff; opacity: 0.4; }
+#blog_carousel .carousel-control.right:hover, #blog_carousel .carousel-control.left:hover{ opacity: 1.0; }
+
+.post-quote {
+  background: #222 !important;
+  color: #fff !important;
+  padding: 30px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  margin: 25px 0;
+}
+.post-quote:hover { opacity: 1.0;}
+.post-quote h3 { font-size: 30px; color: #fff !important; font-weight: 400 !important; }
+
+.pager {
+  font-size: 14px !important;
+  font-weight: 700;
+  color: #222;
+  margin: 65px auto;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 4px;
+  line-height: 1.7em;
+}
+.pager .typcn  { color: #888; font-size: 28px !important; }
+.typcn.reply { font-size: 20px !important; }
+
+.panel{
+  background: #222 !important;
+  color: #f1f1f1 !important;
+  padding: 20px 30px 0px ;
+  border: 5px double #fff;
+  margin: 5px 0;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.panel h5 { color: #fff !important; margin: 0px 0 15px; }
+.panel a { font-size: 30px;color: #bbb; }
+.panel a:hover{ color: #fff; }

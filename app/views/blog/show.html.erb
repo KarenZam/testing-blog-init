@@ -1,0 +1,41 @@
+<section id="blog">
+  <div class="container pad60">
+    <div class="row">
+      <div class="col-sm-12 col-lg-12 pad45">
+        <div class="post-title text-center ">
+          <%= @article.title %>
+        </div>
+        <div class="post-meta text-center ">
+          <ul>
+            <li>Posted by <a href="#"><%= @article.user.username %></a> </li>
+            <li>in <a href="#">web</a>, <a href="#">graphics</a> </li>
+            <li>tags <a href="#">prints</a>, <a href="#">design</a> </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-10 col-lg-offset-1 pad30">
+          <img src="img/blog/big-slider1.jpg" alt=""/>
+          <div class="pad25"></div>
+          <div class="blog-post-markdown">
+            <%= m(@article.body) %>
+          </div>
+
+          <p>
+            <a href="#"><i class="typcn typcn-social-facebook-circular"></i></a>
+            <a href="#"><i class="typcn typcn-social-twitter-circular"></i></a>
+            <a href="#"><i class="typcn typcn-social-dribbble-circular"></i></a>
+            <a href="#"><i class="typcn typcn-social-vimeo-circular"></i></a>
+          <p>
+        </div>
+
+        <h5 class="pad25"><strong><%= @article.comments.length %></strong> comments</h5>
+
+        <div class="media pad15">
+          <% @article.comments.each do |comment| %>
+            <%= render partial: 'comment', locals: { comment: comment } %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

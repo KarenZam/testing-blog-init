@@ -1,0 +1,24 @@
+.carousel-indicators{ top: 0px; }
+.carousel-control {
+   position: absolute;
+  top: 100%;
+  left: 0px;
+  width: 50px;
+  height: 50px;
+  font-size: 35px;
+  outline: none;
+  webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+  transition: none;
+   border: 0px none;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px; opacity: 1.0;
+  filter: none !important;
+}
+.carousel-control.right:hover, .carousel-control.left:hover { opacity: 1.0; color: #222; }
+.carousel-control.right { right: 40%; left: auto; bottom: 0%; background-image: none !important; filter: none !important; text-shadow: none;}
+.carousel-control.left { left: 40%; right: auto; bottom: 0%; background-image: none !important; filter: none !important; text-shadow: none; }
+
+.border { border: 3px double #222; }

@@ -1,0 +1,24 @@
+.footer {
+  background: #222 url( /img/cartographer.png ) repeat;
+  margin: 0px auto;
+    padding: 60px 0;
+    text-align: center;
+}
+#copyright {
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+   text-align: center;
+  color: #fff;
+    margin: 10px auto;
+    padding: 0px 0;
+}
+.footer .typcn{
+  color: #999 !important;
+  font-size: 50px;
+  margin: 0px auto 30px;
+  text-align: center;
+}
+.footer .typcn:hover, .footer a:hover { color: #fff !important; }
+.footer a { color: #999 !important; }

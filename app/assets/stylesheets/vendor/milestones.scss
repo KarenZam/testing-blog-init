@@ -1,0 +1,37 @@
+#about .well{
+  background: url( ../img/milestones.jpg ) 50% 0% fixed no-repeat;
+  padding: 90px 0 120px;
+  background-position: top center;
+  -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+}
+
+#about .well h1 {
+  margin: 0 auto;
+  font-size: 35px !important;
+  font-weight: 400 !important;
+  line-height: 60px;
+  letter-spacing: 5px;
+  color: #bbb !important;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+.counter {
+  padding: 10px 0 0;
+  font-size: 70px;
+  font-weight: 700 !important;
+  line-height: 80px;
+  color: #fff;
+}
+.light {
+  font-family: 'Cousine', sans-serif;
+  padding: 20px 0;
+  font-size: 20px;
+  font-weight: 400 !important;
+  line-height: 25px;
+  color: #bbb;
+  margin: 0 auto;
+}

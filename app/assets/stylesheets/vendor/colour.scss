@@ -1,0 +1,58 @@
+$selection-bgnd-color:    rgba( 255, 255, 255, 1.0 );
+$blog-color:              rgba(  52, 152, 219, 1.0 );
+$gray:                    rgba(  34,  34,  34, 1.0 );
+
+.colour,
+a,
+a:hover,
+.lines-colour,
+.carousel-control.right,
+.carousel-control.left {
+  color: $blog-color;
+}
+
+blockquote {
+  border-left: 4px solid $blog-color !important;
+}
+
+.pager a .typcn {
+  color: $blog-color !important;
+}
+
+.pager a .typcn:hover {
+  color: $gray;
+}
+
+.nav-tabs .active a,
+.nav-tabs a:hover,
+.nav-tabs .active a:focus {
+  background-color: $blog-color !important;
+}
+
+.list-group-item.price,
+.list-group-item .btn:hover,
+.service:hover {
+  background-color: $blog-color !important;
+}
+
+::selection {
+  background: $blog-color;
+  color: $selection-bgnd-color;
+}
+
+::-moz-selection {
+  background: $blog-color;
+  color: $selection-bgnd-color;
+}
+
+.grid-loadMore:hover {
+  color: $blog-color !important;
+}
+
+
+
+
+
+
+
+

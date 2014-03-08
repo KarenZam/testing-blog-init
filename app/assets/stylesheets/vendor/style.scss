@@ -1,0 +1,465 @@
+/*
+Theme Name: URBAN SPACE - Version: 1
+Description: Designed by josweb.
+Author: Jo
+Purchase: http: //themeforest.net/user/josweb
+
+01. GENERAL STYLING
+02. MENU
+03. HOME SECTION - including index.html, index_video.html, index_single.html home sections
+04. ABOUT SECTION
+- TEAM
+- MILESTONES
+05. SERVICES SECTION
+- SERVICE ICONS
+- TICKER
+- QUOTES CAROUSEL
+06: WORK SECTION
+- WORK CAROUSELS
+- PARALLAX WORK QUOTE
+- GALLERY
+- WORK SLIDER
+- BG VIDEO / CLIENTS SECTION
+07: CONTACT SECTION
+- MAP
+- CONTACT FORM
+- SOCIAL ICONS
+08. FOOTER SECTION
+09. BLOG
+10. CSS3 ANIMATIONS
+11. MEDIA QUERIES
+*/
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #555;
+  font-weight: 400;
+  background: #F6F6F6;
+  overflow-x: hidden !important;
+  margin: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: rgba( 255, 255, 255, 0 );
+  -webkit-font-smoothing: subpixel-antialiased;
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  height: 100%;
+}
+
+a, a:visited, a:hover, a:active, a:focus, input, select, textarea {
+  outline: none;
+  text-decoration: none;
+}
+
+a, li {
+  -webkit-tap-highlight-color: rgba( 0, 0, 0, 0 );
+}
+
+:focus, .btn:focus {
+  outline: 0;
+}
+
+code {
+  color: #333;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  vertical-align: top;
+  ms-interpolation-mode: bicubic;
+  opacity: 1.0;
+  width: auto\9;
+}
+
+iframe {
+  border: 0;
+}
+
+.well {
+  box-shadow: none;
+  border: none;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  background: transparent;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.pull-left {
+  margin-right: 10px;
+}
+
+.pull-right {
+  margin-left: 10px;
+}
+
+input {
+  -webkit-appearance: none;
+}
+
+/**** PRELOADER ****/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 9999;
+}
+
+#status {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-image: url( /img/status.gif );
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -100px 0 0 -100px;
+}
+
+/**** LINKS ****/
+a {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.lines-colour {
+  color: #E84E41;
+  padding: 2px 0;
+}
+
+.lines-colour:hover {
+  color: #333;
+  border-bottom: 1px solid #999;
+  border-top: 1px solid #999;
+  padding: 4px 0;
+}
+
+.lines {
+  color: #333;
+  padding: 2px 0;
+}
+.lines:hover {
+  color: #333;
+  border-bottom: 1px solid #333;
+  border-top: 1px solid #333;
+  padding: 4px 0;
+}
+
+/** BUTTONS **/
+.btn {
+  padding: 20px 25px;
+  background: transparent;
+  border: 3px double #222;
+  cursor: pointer;
+  font-family: 'Montserrat';
+  font-size: 12px;
+  text-align: center;
+  display: inline-block;
+  overflow: hidden;
+  color: #222;
+  border-radius: 0px;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.btn:hover {
+  background-color: #222;
+  cursor: pointer;
+  font-family: 'Montserrat';
+  color: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  drop-shadow: none !important;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn .typcn {
+  display: inline;
+  float: left;
+  margin: -2px 10px 0 0;
+  font-size: 19px;
+  color: #222;
+}
+
+.btn a:hover, .btn:hover .typcn {
+  color: #fff !important;
+}
+
+/**** VIDEO ****/
+.vendor {
+  position: relative;
+  padding: 0 0 56.25%;
+  height: 0;
+  margin: 0 0;
+}
+
+.vendor iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/**** LISTS ****/
+ul {
+  list-style-type: square;
+  padding: 0 0 ;
+  margin: 0 0;
+}
+
+li {
+  padding: 0 0px 0 5px ;
+  margin: 0 0px 0px 14px;
+}
+
+/**** HR ****/
+.hr {
+  width: 20%;
+  border-top: 3px double black;
+  margin: 20px auto 25px;
+}
+
+.hr2 {
+  width: 10%;
+  border-top: 3px double black;
+  margin: 25px auto 25px;
+}
+
+/**** BLOCKQUOTE ****/
+blockquote {
+  border-left: 4px solid #E84E41 !important;
+  padding: 10px;
+}
+
+/**** ACCORDIAN ****/
+#accordion {
+  padding: 0px 0px;
+  background-color: #222;
+}
+
+.panel-heading {
+  border-bottom: 1px solid #444;
+}
+
+.panel-heading h6 a {
+  color: #f1f1f1;
+  text-transform: none;
+  letter-spacing: 1px;
+}
+
+.panel-heading h6 {
+  font-size: 15px !important;
+  margin: 0px 0px;
+  font-weight: 400;
+}
+
+.panel-heading h6 a {
+  color: #fff;
+}
+
+.panel-heading h6 a:hover {
+  color: #bbb;
+}
+
+.panel-collapse {
+  color: #bbb;
+}
+
+/**** TABS ****/
+.nav-tabs {
+  border-bottom: 1px solid;
+}
+
+.nav-tabs a:link {
+  color: #fff !important;
+}
+
+.nav-tabs a {
+  background-color: #222 !important;
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  border-radius: 0px !important;
+  border: 0 none !important;
+}
+
+.tab-pane {
+  margin-top: 20px;
+}
+
+/**** MODAL BOX ****/
+.modal-header, .modal-footer {
+  border: 0px none;
+}
+
+.modal-footer {
+  margin: 0 0;
+}
+
+/**** PRICING TABLES ****/
+.list-group-item {
+  color: #555 !important;
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  border-radius: 0px !important;
+}
+
+.list-group-item.top {
+  background-color: #222 !important;
+  font-size: 18px;
+  color: #fff !important;
+  text-transform: u ppercase;
+  letter-spacing: 2px;
+  border: 0px none;
+  padding: 20px 0 !important;
+}
+
+.list-group-item.bottom {
+  background-color: #222 !important;
+  border: 0px none;
+}
+
+.list-group-item.price {
+  color: #fff !important;
+  font-size: 40px;
+  padding: 25px 0 15px;
+  border: 0px none;
+}
+
+.list-group-item.price .small {
+  font-size: 13px;
+}
+
+.list-group-item .btn {
+  background-color: #fff !important;
+  margin: 10px auto;
+}
+
+/**** PADDING ****/
+.pad90 {
+  padding-top: 90px;
+}
+
+.pad60 {
+  padding-top: 60px;
+}
+
+.pad45 {
+  padding-top: 45px;
+}
+
+.pad30 {
+  padding-top: 30px;
+}
+
+.pad25 {
+  padding-top: 25px;
+}
+
+.pad20 {
+  padding-top: 20px;
+}
+
+.pad15 {
+  padding-top: 15px;
+}
+
+.pad10 {
+  padding-top: 10px;
+}
+
+.marg-right10 {
+  margin-right: 10px;
+}
+
+/**** TYPOGRAPHY ****/
+h1, h2, h3,h4,h5,h6 {
+  font-family: 'Montserrat', sans-serif;
+  color: #222 !important;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 120px;
+  line-height: 80px;
+  position: relative;
+  letter-spacing: -2px;
+  color: #222;
+  margin: 0px 0px 50px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.88em;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 1.5em;
+  margin-bottom: 25px;
+}
+
+h3 {
+  font-size: 1.5em;
+  line-height: 1.7em;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.2em;
+  line-height: 1.7em;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+h5, h6 {
+  font-weight: 700;
+  color: #222;
+  margin: 30px auto 25px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 4px;
+  line-height: 1.7em;
+}
+
+.lead {
+  font-family: 'Cousine', sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+  word-spacing: -5px;
+  line-height: 45px;
+  margin-bottom: 45px;
+  color: #696f77;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.team-item-wrapper span, .carousel-inner, #project_slider p {
+  font-family: 'Cousine', sans-serif;
+  font-size: 14px;
+}
+

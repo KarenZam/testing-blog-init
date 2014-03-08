@@ -1,0 +1,197 @@
+
+// jQuery FlexSlider v2.2.0
+// http://www.woothemes.com/flexslider/
+//
+// Copyright 2012 WooThemes
+// Free to use under the GPLv2 license.
+// http://www.gnu.org/licenses/gpl-2.0.html
+//
+// Contributing author: Tyler Smith (@mbmufffin)
+
+@mixin transition( $type, $time, $easing ) {
+  -o-transition: $type $time $easing;
+  -moz-transition: $type $time $easing;
+  -webkit-transition: $type $time $easing;
+  -ms-transition: $type $time $easing;
+  transition: $type $time $easing;
+}
+
+// Browser Resets
+// *********************************
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  {
+  outline: none;
+}
+
+.slides,
+.flex-control-nav,
+.flex-direction-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+// FlexSlider Necessary Styles
+// *********************************
+.flexslider {
+  margin: 0;
+  padding: 0;
+}
+
+// Hide the slides before the JS is loaded. Avoids image jumping
+.flexslider .slides > li {
+  display: none;
+  -webkit-backface-visibility: hidden;
+}
+
+.flexslider .slides img {
+  display: block;
+  width: 100%;
+}
+
+.flex-pauseplay span {
+  text-transform: capitalize;
+}
+
+// Clearfix for the .slides element
+.slides:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+
+html[xmlns] .slides {
+  display: block;
+}
+
+* html .slides {
+  height: 1%;
+}
+
+// No JavaScript Fallback
+// If you are not using another script, such as Modernizr, make sure you
+// include js that eliminates this class on page load
+.no-js .slides > li:first-child {
+  display: block;
+}
+
+// FlexSlider Default Theme
+// *********************************
+.flexslider {
+  position: relative;
+  zoom: 1;
+}
+
+.flex-viewport {
+  max-height: 2000px;
+  @include transition( all, 1s, ease );
+}
+
+.loading .flex-viewport {
+  max-height: 300px;
+}
+
+.flexslider .slides {
+  zoom: 1;
+}
+
+.carousel li {
+  margin-right: 5px;
+}
+
+// Direction Nav
+.flex-direction-nav {
+  *height: 0;
+}
+
+.flex-direction-nav a {
+  color: rgba( 0, 0, 0, 0.8);
+  cursor: pointer;
+  display: block;
+  height: 47px;
+  margin: -20px 0 0;
+  opacity: 1;
+  overflow: hidden;
+  position: absolute;
+  text-indent: -9999px;
+  top: 50%;
+  width: 40px;
+  z-index: 10;
+  @include transition( all, .3s, ease );
+}
+
+.flex-direction-nav .flex-next {
+  background-position: 100% 0;
+}
+
+.flexslider:hover .flex-prev {
+  left: 10px;
+  opacity: 0.7;
+}
+
+.flexslider:hover .flex-next {
+  opacity: 0.7;
+  right: 10px;
+}
+
+.flexslider:hover .flex-next:hover,
+.flexslider:hover .flex-prev:hover {
+  opacity: 1;
+}
+
+.flex-direction-nav .flex-disabled {
+  cursor: default;
+  filter: alpha( opacity = 0 );
+  opacity: 0!important;
+}
+
+// Control Nav
+.flex-control-nav {
+  bottom: 44px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 500;
+}
+
+.flex-control-nav li {
+  display: inline-block;
+  margin: 0 6px;
+  zoom: 1;
+}
+
+.flex-control-paging li a {
+  background: rgba(255,255,255,0.5);
+  border-radius:100px;
+  cursor: pointer;
+  display: block;
+  height: 20px;
+  text-indent: -9999px;
+  width: 20px;
+}
+
+.flex-control-paging li a:hover {
+  background: rgba(255,255,255,0.7);
+}
+
+.flex-control-paging li a.flex-active {
+  background: rgba(255,255,255,0.9);
+  cursor: default;
+}
+
+@media screen and (max-width: 860px) {
+  .flex-direction-nav .flex-prev {
+    left: 0px;
+    opacity: 1;
+  }
+
+  .flex-direction-nav .flex-next {
+    opacity: 1;
+    right: 0px;
+  }
+}

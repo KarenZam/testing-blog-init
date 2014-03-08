@@ -1,0 +1,33 @@
+#home{ overflow: hidden; }
+#home-slider { position: relative;  }
+.slider-text { display: none; }
+#home-slider .slides li {margin: 0 0;
+  -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+  background-attachment: fixed;
+  background-repeat: repeat-y;
+  background-position: center;
+}
+
+#home-slider .typcn { color: #fff; font-size: 60px; }
+
+.intro-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 65px;
+  line-height: 70px;
+  letter-spacing: 15px;
+  color: #fff;
+  margin: 40px 40px;
+  text-shadow:  0px 1px 1px rgba( 0,0,0,0.3 );
+}
+
+.intro-text-sub {
+  font-family: 'Cousine', sans-serif;
+  font-size: 20px;
+  color: #fff;
+  word-spacing: 0px;
+  letter-spacing: 2px;
+  text-shadow:  0px 1px 1px rgba( 0,0,0,0.3 );
+}

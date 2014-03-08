@@ -1,0 +1,38 @@
+.service {
+  text-align: center;
+  margin: 20px auto 0;
+  position: relative;
+  width: 120px;
+  height: 120px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  background: #222;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.service .typcn {
+  color: #fff;
+  line-height: 110px;
+  margin: 0 auto;
+  position: relative;
+  display: block;
+  font-size: 52px;
+  -webkit-transform: scale( 1.0 );
+  -moz-transition: -moz-transform 0.5s;
+  -moz-transform: scale( 1.10 );
+  -ms-transform: scale( 1.0 );
+  transition: transform 0.5s;
+  transform: scale( 1.0 );
+
+}
+.service .typcn:hover {
+  -webkit-transform: scale( 1.1 );
+  -moz-transition: -moz-transform 0.5s;
+  -moz-transform: scale( 1.1 );
+  -ms-transform: scale( 1.1 );
+  transition: transform 0.5s;
+  transform: scale( 1.1 );
+}
