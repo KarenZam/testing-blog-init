@@ -27,4 +27,5 @@
  *= require ./vendor/colour
  *= require ./vendor/typicons
  *= require ./vendor/flexslider
+ *= require_self
  */
