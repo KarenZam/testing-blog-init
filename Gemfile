@@ -25,4 +25,5 @@ group :development, :test do
   gem 'binding_of_caller'
   gem 'fabrication'
   gem 'ffaker'
+  gem 'letter_opener'
 end
